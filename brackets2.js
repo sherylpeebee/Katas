@@ -68,5 +68,5 @@ function matchingBrackets(arr){
   return test;
 }
 
-console.log(matchingBrackets([ "[)", "{}[]()", "{}[()]()" ]));//
+console.log(matchingBrackets([ "[)", "{}[]()", "{}[()]()" ]));//last case should pass. passes when last two bracket sets of index 2 are reversed. ?
 console.log(matchingBrackets([ "{}[]([])", "][[{()](", "([){}][]{" ]));
