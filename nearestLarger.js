@@ -1,4 +1,4 @@
-//10/09/15-10/10/15
+//10/10/15
 
 // Given an array with numbers, write a program that efficiently answers queries of
 // the form: “Which is the nearest larger value for the number at position i?”, where
