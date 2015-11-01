@@ -7,7 +7,6 @@ function framedString(str){
   var longest = sortedByLength.pop();
   var borderWidth = longest.length + framePadding;
   var frame = Array(borderWidth + 1).join("*") + "\n";
-
   var splitStr2 = str.split(" ");
   var container = [],
   newLineBeginning = borderWidth+1;
@@ -28,7 +27,7 @@ function framedString(str){
     }
   });
   var contents = container.join("");
-  console.log(frame + contents + frame);
+  return frame + contents + frame;
 }
 
-framedString("Hello world in a frame");
+console.log(framedString("Hello world in a frame"));
