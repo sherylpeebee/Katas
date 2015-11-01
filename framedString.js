@@ -44,17 +44,8 @@ function framedString(str){
   });
   var longest = sortedByLength.pop();
   var borderWidth = longest.length + framePadding;
-  var frame = [];
-  for(var i = 0; i <= borderWidth; i++){
-    if(i === borderWidth){
-      frame.push("\n");
-    }
-    else{
-      frame.push("*");
-    }
-  }
-  console.log(frame.join(""));
-  console.log(frame.join("")+ printWords(str, borderWidth));
+  var frame = Array(borderWidth + 1).join("*") + "\n";
+  console.log(frame + printWords(str, borderWidth));
 }
 
 framedString("Hello world in a frame");
